@@ -5,3 +5,4 @@ installer.sh --> Script automatizado para la instalación y configuracion de Ope
 
 reportes_pdf.sh --> Script automatizado para el correcto funcionamiento de realizar los reportes en formato PDF.
 
+update_automaticas --> Parametros de configuración para la actualización automatica de los feeds a traves de Crontab.
