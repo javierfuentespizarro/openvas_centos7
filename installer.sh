@@ -20,6 +20,8 @@ sed -i '/^#.*unixsocket/s/^# //' /etc/redis.conf
 echo "Reiniciamos y habilitamos el servicio de redis"
 systemctl enable redis && systemctl restart redis
 echo "Iniciando configuración + descarga Openvas"
+echo "Escoge RSYNC como predeterminado!"
+echo "Recuerda que deberas crear una contraseña de administración para el usuario admin"
 openvas-setup
 echo 'OPTIONS="--listen=0.0.0.0 --port=9392"' > /etc/sysconfig/gsad
 systemctl start gsad
