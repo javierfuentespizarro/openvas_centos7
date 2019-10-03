@@ -1,5 +1,5 @@
 # openvas_centos7
-Script de automatización de instalación de Openvas en Centos7
+Repositorio para facilitar la puesta en marcha de Openvas en SO Centos 7.
 
 installer.sh --> Script automatizado para la instalación y configuracion de Openvas.
 
