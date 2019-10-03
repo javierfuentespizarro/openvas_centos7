@@ -21,5 +21,8 @@ echo "Reiniciamos y habilitamos el servicio de redis"
 systemctl enable redis && systemctl restart redis
 echo "Iniciando configuración + descarga Openvas"
 openvas-setup
+echo 'OPTIONS="--listen=0.0.0.0 --port=9392"' > /etc/sysconfig/gsad
+systemctl start gsad
+echo "Accede a Openvas a traves de tu IP con el puerto 9392"
 
 
