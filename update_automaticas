@@ -1,0 +1,8 @@
+Para añadir las updates automaticas, podemos configurar los siguientes parametros en nuestro crontab.
+1.Primer paso: crontab -e
+2. Añadimos las siguientes lineas:
+    35 1 * * * /usr/sbin/greenbone-nvt-sync > /dev/null
+    5 0 * * * /usr/sbin/greenbone-scapdata-sync > /dev/null
+    5 1 * * * /usr/sbin/greenbone-certdata-sync > /dev/null
+    
+3. Guardamos con ESC + :wq
